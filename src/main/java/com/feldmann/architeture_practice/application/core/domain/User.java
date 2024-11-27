@@ -10,14 +10,17 @@ public class User {
 
     private String surname;
 
+    private String email;
+
     private List<Loan> loanList;
 
     public User() {
     }
 
-    public User(String name, String surname, List<Loan> loanList) {
+    public User(String name, String surname, String email, List<Loan> loanList) {
         this.name = name;
         this.surname = surname;
+        this.email = email;
         this.loanList = loanList;
     }
 
@@ -53,4 +56,11 @@ public class User {
         this.loanList = loanList;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
